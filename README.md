@@ -10,7 +10,7 @@ The code was developed under R version 4.1.2 and uses the following packages: re
 
 ## Description of Repository Contents
 
-To run the analysis end-to-end, run src/01_process_data.R, then TO_FILL_IN ... 
+To run the analysis end-to-end, run src/01_process_data.R followed by src/02_make_plots.R. 
 
 The code throughout assumes that the user is using the here package. If you're unfamiliar with that package, then just make sure to make an RStudio Project out of the code in this repository and always open that project before running this code.
 
@@ -23,9 +23,9 @@ The code throughout assumes that the user is using the here package. If you're u
 ### src 
 
   - 01_process_data.R: Takes raw/penguins_raw.csv, subsets variables, cleans up column names, and writes to data/processed/penguins.csv 
+  - 02_make_plots.R: Takes processed data in data/processed/penguins.csv, makes plots of bill length vs bill depth, and saves them to /output
 
 ### output
-
-TO_FILL_IN
+  - fig_01_bill_species.pdf: A plot of bill length vs bill depth with a line of best fit within each species 
 
 
