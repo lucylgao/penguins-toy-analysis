@@ -6,11 +6,11 @@ This repository will eventually contain an end-to-end toy analysis that starts w
 Lucy Gao 
 
 ### Dependencies 
-The code was developed under R version 4.1.2 and uses the following packages: TO_FILL_IN
+The code was developed under R version 4.1.2 and uses the following packages: readr_2.1.2, dplyr_1.0.9, forcats_0.5.1, here_1.0.1, stringr_1.4.0, TO_FILL_IN ...     
 
 ## Description of Repository Contents
 
-To run the analysis end-to-end, TO_FILL_IN ... 
+To run the analysis end-to-end, run src/01_process_data.R, then TO_FILL_IN ... 
 
 The code throughout assumes that the user is using the here package. If you're unfamiliar with that package, then just make sure to make an RStudio Project out of the code in this repository and always open that project before running this code.
 
@@ -18,11 +18,11 @@ The code throughout assumes that the user is using the here package. If you're u
 
 - raw: Contains raw data in penguins_raw.csv
 
-- processed: TO_FILL_IN
+- processed: Contains processed data in penguins.csv (created by src/01_process_data.R) 
 
 ### src 
 
-TO_FILL_IN
+  - 01_process_data.R: Takes raw/penguins_raw.csv, subsets variables, cleans up column names, and writes to data/processed/penguins.csv 
 
 ### output
 
