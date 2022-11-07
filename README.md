@@ -1,12 +1,12 @@
-## Palmer Penguins Toy Analysis (UNDER CONSTRUCTION)
+## Palmer Penguins Toy Analysis 
 
-This repository will eventually contain an end-to-end toy analysis that starts with very basic pre-processing of the raw Palmer Penguins data, then makes two plots of bill length vs bill depth visualizing the within-species bill length-depth relationship and the overall bill length-depth relationship to demonstrate Simpson's Paradox. 
+This repository contains an end-to-end toy analysis that starts with very basic pre-processing of the raw Palmer Penguins data, then makes two plots of bill length vs bill depth visualizing the within-species bill length-depth relationship and the overall bill length-depth relationship to demonstrate Simpson's Paradox. 
 
 ### Authors 
 Lucy Gao 
 
 ### Dependencies 
-The code was developed under R version 4.1.2 and uses the following packages: readr_2.1.2, dplyr_1.0.9, forcats_0.5.1, here_1.0.1, stringr_1.4.0, TO_FILL_IN ...     
+The code was developed under R version 4.1.2 and uses the following packages: readr_2.1.2, dplyr_1.0.9, forcats_0.5.1, here_1.0.1, stringr_1.4.0, ggplot2_3.3.6
 
 ## Description of Repository Contents
 
@@ -27,5 +27,6 @@ The code throughout assumes that the user is using the here package. If you're u
 
 ### output
   - fig_01_bill_species.pdf: A plot of bill length vs bill depth with a line of best fit within each species 
+  - fig_02_bill_no_species.pdf: A plot of bill length vs bill depth with a line of best fit across all species
 
 

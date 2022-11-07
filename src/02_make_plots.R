@@ -39,3 +39,23 @@ bill_len_dep <- ggplot(data = penguins,
 ggsave(bill_len_dep, 
        file = here::here("output", 
                          "fig_01_bill_species.pdf"))
+
+# Make a plot of bill length vs depth
+# Plotted linear line of best fit across all penguins
+bill_no_species <- ggplot(data = penguins,
+                          aes(x = bill_length_mm,
+                              y = bill_depth_mm)) +
+  geom_point() +
+  scale_color_manual(values = c("darkorange","purple","cyan4")) +
+  labs(title = "Penguin bill dimensions (omit species)",
+       subtitle = "Palmer Station LTER",
+       x = "Bill length (mm)",
+       y = "Bill depth (mm)") +
+  theme(plot.title.position = "plot",
+        plot.caption = element_text(hjust = 0, face= "italic"),
+        plot.caption.position = "plot") +
+  geom_smooth(method = "lm", se = FALSE, color = "gray50")
+
+ggsave(bill_no_species, 
+       file = here::here("output", 
+                         "fig_02_bill_no_species.pdf"))
